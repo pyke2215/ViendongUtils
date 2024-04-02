@@ -18,4 +18,4 @@ app.use((err, req, res, next) =>{
     // stack
     globalErrorHandler(err, req, res, next);
 });
-// app.listen(PORT, console.log(`Server is up and running on ${PORT}`));
+app.listen(PORT, console.log(`Server is up and running on ${PORT}`));
