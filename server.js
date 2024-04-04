@@ -1,9 +1,8 @@
 const express = require('express');
-const dotenv = require('dotenv');
 const app = express();
 let {run_db_server} = require('./lib/config/mongodb');
 const globalErrorHandler = require('./lib/middlewares/handlingGlobalError');
-const PORT = process.env.PORT || 9000;
+const PORT = 9000;
 const subjectRoutes = require('./lib/routes/subject/index');
 const testRoutes = require('./lib/routes/tests/index');
 run_db_server();
